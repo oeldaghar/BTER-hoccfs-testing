@@ -1,0 +1,33 @@
+Previously:
+Converted BTER code from MATLAB to Julia v1.0. Only converted portion that generates network
+given the desired degree and avg cc per degree distribution. 
+
+5/12/19 
+This Time:
+started file for measuring hoccfs and got a couple of networks
+
+Next Time:
+convert networks via spyder to make edge files compatible x
+use package to save computed data x
+aggreagte data to get hoccfs distribution binned by degree
+
+5/13/19
+This Time:
+Got networks able to import correctly into Julia, imported and attempted to compute stats for local
+clustering for k=2,3,4 (k=2 is classical clustering). will consider using smaller networks
+since the comp time will increase for bter networks. CA-HepPh did not finish running when 
+looking for 5 cliques. Found 21 of 6591 in more than 1 hour. Documentation says code is 
+slower for nodes that are processed first. Also, we are computing things twice. only 
+consider optimizing if this is a viable direction for research.
+
+Next Time:
+find smaller networks or cut comp time to make to reasonable
+bin data to get hoccfs distribution by degree
+test BTER code and compare to MATLAB implementation
+
+6/6/19
+got BTER code to work, slight issue with some clustering coeffs. Likely due to not having all bells
+whistles of full implementation. Edge processing after generation differs slightly and can be made more
+efficient. Speed ups are needed.
+
+Tested HOCCFS via Austin Benson's Julia 0.6 code. Currently in Limbo.
